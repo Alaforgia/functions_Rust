@@ -1,17 +1,22 @@
+fn main() {
+    let x = plus_one(5);
 
-
-fn five() -> i32 {
-    5
-}
-
-fn main(){
-    let x = five();
     println!("The value of x is: {}", x);
 }
 
+fn plus_one(x: i32) -> i32 {
+    x + 1
+}
 
+// // This is a perfectly valid function in Rust. i32 is the return type.
+// fn five() -> i32 {
+//     5
+// }
 
-
+// fn main(){
+//     let x = five();
+//     println!("The value of x is: {}", x);
+// }
 
 // // Calling a function or a macro is an expression. " {} " is also an expression.
 // fn main() {
@@ -19,15 +24,11 @@ fn main(){
 
 //     let y = {
 //         let x= 3;
-//         // If you add a semicolon to the end of an expression, you turn it into a statement, which will then not return a value. 
+//         // If you add a semicolon to the end of an expression, you turn it into a statement, which will then not return a value.
 //         x + 1
 //     };
 //     println!("The value of y is: {}", y)
 // }
-
-
-
-
 
 // Function parameters
 //
